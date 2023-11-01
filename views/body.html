@@ -1,0 +1,49 @@
+<body>
+    <div class="container" style="min-height: 400px; padding-top: 50px;">
+		<div class="row">
+			<div class="col">
+				<h5>Salário bruto</h5>
+				<br>
+				<form class="row">
+					<div class="col input-group">
+						<span class="input-group-text" id="basic-addon1">R$</span>
+						<input type="number" class="form-control" id="salarioBruto" placeholder="Digite seu salário bruto">
+					</div>
+				</form>
+				<br>
+				<div class="col">
+					<input type="button" class="btn btn-outline-secondary" onclick="calcular()" value="Calcular">
+				</div>
+			</div>
+	   
+			<div class="col"> 
+				<h5>Salário liquído</h5>
+				<br>
+				<li class="list-group-item" id="salarioLiquido">...</li>
+				<br>
+				<ol class="list-group">
+					<li class="list-group-item align-items-start">
+					<div class="ms-2 me-auto">
+						<div class="fw-bold">INSS</div>
+						<div id="inss">...</div>
+					</div>
+					</li>
+					<li class="list-group-item  align-items-start">
+					<div class="ms-2 me-auto">
+						<div class="fw-bold">IRRF</div>
+						<div id="irrf">...</div>
+					</div>
+					</li>
+					<li class="list-group-item  align-items-start">
+					<div class="ms-2 me-auto">
+						<div class="fw-bold">FGTS</div>
+						<div id="fgts">...</div>
+					</div>
+					</li>
+				</ol>
+			</div>
+		</div>		
+    </div>
+</body>
+
+<script src="../assets/js/calculo.js"></script>
